@@ -26,10 +26,10 @@ parser.add_argument('--lambda_u', default=30, type=float, help='weight for unsup
 parser.add_argument('--gpuid', default=0, type=int)
 parser.add_argument('--num_class', default=10, type=int)
 parser.add_argument('--threshold', default=0.9, type=int)
-parser.add_argument('--data_path', default='/data/yirumeng/Dataset/cifar-10-batches-py', type=str,
+parser.add_argument('--data_path', default='/dataset', type=str,
                     help='path to dataset')
 parser.add_argument('--dataset', default='cifar10', type=str)
-parser.add_argument('--out', default='/', type=str)
+parser.add_argument('--out', default='/checkpoint', type=str)
 args = parser.parse_args()
 
 # torch.cuda.set_device(args.gpuid)
